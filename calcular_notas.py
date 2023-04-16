@@ -1,18 +1,4 @@
-import csv 
-def calificaciones():
-    with open ("calificaciones.csv","r") as archivo:
-        lista_alumnos=[]
-        reader=csv.DictReader(archivo,delimiter=";")
-        next(reader)
-        for row in reader:
-                lista_alumnos.append(row)
-        lista_alumnos.sort(key=lambda x: x["Apellidos"])
-        return lista_alumnos
-
-calificaciones_alumnos=calificaciones()
-for alumno in calificaciones_alumnos:
-    print(alumno)
-
+from calificaciones import calificaciones
 def calcular_notas(alumnos):
     for alumno in alumnos:
         # Calcular nota final de teoría como el promedio de los dos parciales ponderado al 30%
@@ -42,5 +28,3 @@ lista_alumnos_con_notas = calcular_notas(lista_alumnos)
 
 for alumno in lista_alumnos_con_notas:
     print(alumno)
-
-
