@@ -1,9 +1,14 @@
-# Calificaciones
-Participantes:Enrique Pardo,Claudia,Martina
+# Ejercicios Calificaciones
+Participantes:Enrique Pardo, Claudia, Martina
 
 Link repo:https://github.com/clauloro/Ejercicio-de-POO-con-archivos.git
-  
-## Archivos
+
+## Índice
+  Cada ejercicio esta resuelto por separado, el ejercicio 1 en la parte 1 el 2 en el 2 y el3 en el 3.
+  Todos estan resueltos en conjunto en el maindonde se ejecuta a la vez.
+
+
+### Archivos
  <em>Parte 1</em>
  
       Una función que reciba el fichero de calificaciones y devuelva una lista de diccionarios, donde cada diccionario contiene la información de los exámenes          
