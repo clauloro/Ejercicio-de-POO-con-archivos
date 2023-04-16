@@ -23,8 +23,3 @@ def calcular_notas(alumnos):
     
     return alumnos
 
-lista_alumnos = calificaciones()
-lista_alumnos_con_notas = calcular_notas(lista_alumnos)
-
-for alumno in lista_alumnos_con_notas:
-    print(alumno)

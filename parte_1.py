@@ -9,9 +9,8 @@ def calificaciones():
         lista_alumnos.sort(key=lambda x: x["Apellidos"])
         return lista_alumnos
 
-calificaciones_alumnos=calificaciones()
-for alumno in calificaciones_alumnos:
-    print(alumno)
+
+
 
 def calcular_notas(alumnos):
     for alumno in alumnos:
@@ -37,10 +36,6 @@ def calcular_notas(alumnos):
     
     return alumnos
 
-lista_alumnos = calificaciones()
-lista_alumnos_con_notas = calcular_notas(lista_alumnos)
-
-for alumno in lista_alumnos_con_notas:
-    print(alumno)
 
 
+calificaciones()
