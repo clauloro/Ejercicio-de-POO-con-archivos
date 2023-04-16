@@ -1,7 +1,7 @@
 # Calificaciones
 Participantes:Enrique Pardo,Claudia,Martina
 
-Link repo:
+Link repo:https://github.com/clauloro/Ejercicio-de-POO-con-archivos.git
   
 ## Archivos
  <em>Parte 1</em>
