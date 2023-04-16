@@ -41,7 +41,7 @@ def main():
     lista_alumnos = calificaciones()
     lista_alumnos_con_notas = calcular_notas(lista_alumnos)
 
-    for alumno in lista_alumnos_con_notas:
+    for alumno in lista_alumnos:
         print(alumno)
 
 
