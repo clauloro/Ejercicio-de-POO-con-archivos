@@ -36,6 +36,13 @@ def calcular_notas(alumnos):
     
     return alumnos
 
+def main():
+    calificaciones_alumnos=calificaciones()
+    lista_alumnos = calificaciones()
+    lista_alumnos_con_notas = calcular_notas(lista_alumnos)
+
+    for alumno in lista_alumnos_con_notas:
+        print(alumno)
 
 
-calificaciones()
+main()
