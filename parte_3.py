@@ -10,3 +10,19 @@ def separar_alumnos(lista_alumnos_con_notas):
         else:
             suspensos.append(alumno)
     return aprobados, suspensos
+
+
+def main():
+    calificaciones_alumnos = calificaciones()
+    lista_alumnos_con_notas = calcular_notas(calificaciones_alumnos)
+    aprobados, suspensos = separar_alumnos(lista_alumnos_con_notas)
+    print('La lista de alumnos aprobados es: \n')
+    print(aprobados)
+    print('==================================================')
+    print('La lista de alumnos suspensos es: \n')
+    print(suspensos)
+
+main()
+
+
+
