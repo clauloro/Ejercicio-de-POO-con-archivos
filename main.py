@@ -87,3 +87,38 @@ if __name__ == '__main__':
 
 
 
+
+''''''
+
+
+def separar_alumnos(lista_alumnos_con_notas):
+    aprobados = []
+    suspensos = []
+    for alumno in lista_alumnos_con_notas:
+        if float(alumno['Asistencia'].replace(',', '.')) >= 0.75 and float(alumno['Parcial1'].replace(',', '.')) >= 4 and float(alumno['Parcial2'].replace(',', '.')) >= 4 and alumno['NotaFinal'] >= 5:
+            aprobados.append(alumno)
+        else:
+            suspensos.append(alumno)
+    return aprobados, suspensos
+
+
+def main():
+    alumnos = calificaciones()
+    alumnos_con_notas = calcular_notas(alumnos)
+    aprobados, suspensos = separar_alumnos(alumnos_con_notas)
+    
+    print("Aprobados:")
+    for alumno in aprobados:
+        print(alumno["Apellidos"], alumno["Nombre"], alumno["NotaFinal"])
+
+    print("\nSuspensos:")
+    for alumno in suspensos:
+        print(alumno["Apellidos"], alumno["Nombre"], alumno["NotaFinal"])
+
+
+if __name__ == "__main__":
+    main()
+
+''''''
+
+
