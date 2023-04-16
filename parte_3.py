@@ -30,3 +30,4 @@ for alumno in aprobados:
 print("\nSuspensos:")
 for alumno in suspensos:
     print(alumno["Apellidos"], alumno["Nombre"], alumno["NotaFinal"])
+    
